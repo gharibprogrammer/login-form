@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #e8e8e8;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.circle-1{
+    width: 1000px;
+    height: 1000px;
+    border-radius: 100%;
+    background-color: cadetblue;
+    position: fixed;
+    z-index: -1;
+    top: 54%;
+    left: -13rem;
+    transform: translateY(-38%);
+}
+.login-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 100%;
+    background-color: #fff;
+}
+.login-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.login-page{
+    border-radius: 20px;
+    border: 5px solid #fff;
+    width: 81%;
+    max-width: 1200px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+}
+.login-page form{
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.login-page form h1{
+    color: #fff;
+    margin-bottom: 3rem;
+}
+.form-group label{
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+.form-group input{
+    border-radius: 20px;
+    width: 100%;
+    border: 2px solid #fff;
+    background: transparent;
+    height: 40px;
+}
+.form-group input:where(:focus , :active){
+    outline: none;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-bottom: 2rem;
+}
+.button{
+    width: 50%;
+    text-align: center;
+}
+.button button {
+    border: none;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 20px;
+    height: 40px;
+    margin-bottom: 2rem;
+}
+.button a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+}
+@media screen and (max-width: 768px){
+    .login-image{
+        display: none;
+    }
+    .login-page form {
+        width: 100%;
+    }
+    .form-group{
+        width: 80%;
+    }
+}
